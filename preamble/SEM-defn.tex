@@ -1,0 +1,62 @@
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Einige sinnvolle Definitionen
+%% und nützliche Pakete
+%% Eigene Ergäzungen in My-Def.tex
+%% Stand: 2022/03/11
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% -- Zahlen
+
+\newcommand{\N}{\mathbb{N}}		% Natürliche Zahlen
+\newcommand{\Z}{\mathbb{Z}}		% Ganze Zahlen
+\newcommand{\Q}{\mathbb{Q}}		% Rationale Zahlen
+\newcommand{\R}{\mathbb{R}}		% Reelle Zahlen
+\newcommand{\C}{\mathbb{C}}		% Komplexe Zahlen
+\newcommand{\K}{\mathbb{K}}		% Koerperzeichen
+
+%% -- Ableitungen
+%% -- auch als Beispieö für mathematische Ausdrücke
+ 
+\newcommand*{\ds}{\mathop{}\!\mathrm{d}{s}}       % \ds = ds, 
+\newcommand*{\dt}{\mathop{}\!\mathrm{d}{t}}       % \dt = dt, 
+\newcommand*{\dx}{\mathop{}\!\mathrm{d}{x}}       % \dx = dx,
+\newcommand*{\diff}[1]{\mathop{}\!\mathrm{d}{#1}}	% \diff{\mu} = d\mu, 
+
+%% var-Symbole anstelle der Originalen, besser zu unterscheiden
+%% --
+
+\let\ORGvarepsilon=\varepsilon
+\let\varepsilon=\epsilon
+\let\epsilon=\ORGvarepsilon
+%
+\let\ORGvarrho=\varrho
+\let\varrho=\rho
+\let\rho=\ORGvarrho
+%
+\let\ORGvartheta=\vartheta
+\let\vartheta=\theta
+\let\theta=\ORGvartheta
+%
+\let\ORGvarphi=\varphi
+\let\varphi=\phi
+\let\phi=\ORGvarphi
+%
+\let\ORGvarleq=\leqslant
+\let\leqslant=\leq
+\let\leq=\ORGvarleq
+%
+\let\ORGvargeq=\geqslant
+\let\geqslant=\geq
+\let\geq=\ORGvargeq
+
+%% -- Richtigen Abkürzungen; bitte auch in xspace-manual reinsehen
+%% -- Bei Verwendung von \usepackage{hyperref} danch diesem Paket laden
+%% --
+
+\usepackage{xspace}
+\newcommand{\zB}{z.\,B.\xspace}
+\newcommand{\og}{o.\,g.\xspace}
+\renewcommand{\dh}{d.\,h.\xspace}
+\newcommand{\etc}{etc.\xspace}
+\newcommand{\bzw}{bzw.\xspace}
+

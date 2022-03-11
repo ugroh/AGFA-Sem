@@ -1,0 +1,104 @@
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Master.tex -> Inhalt meines Beitrags
+%% in dem SEM-Master.tex File
+%% Stand: 2022/03/11
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+\noindent
+Hier steht eine kurze Zusammenfassung des Inhalts des Vortrags oder der Hausarbeit.
+Dazu dieses \TeX{}--File kopieren und umbenennen.
+Weitergehende Literatur ist im  Literatur\-verzeichnis aufgeführt, wobei ich das Buch von \textsc{Voss} \cite{voss-wiss} empfehlen kann.
+Für einen Einstieg empfehle ich \emph{l2kurz.pdf}, dass man auf 
+%
+\begin{center}
+\texttt{http://mirror.ctan.org/info/lshort/german/} 
+\end{center}
+%
+findet -- weiteres dann in meinem Erläuterungen \emph{Sem-ReadMe.pdf}.
+Ein Teil der hier angegeben Literatur und weiteres findet sich auf ILIAS \bzw in dem \og PDF.
+\end{abstract}
+%
+\subsection{Erster Abschnitt}\label{sec:erster-abschnitt}
+\subsubsection{}
+Es genügt bei der Gliederung  \verb|\subsection{...}| zu verwenden.
+Die weitere Untergliederung \verb|\subsubsection{}| wird nur zur \enquote{Nummerierung} genutzt (siehe das \TeX{}--File hierzu).
+Bitte auch beachten: Ein Abschnitt sollte immer mindestens drei Unterabschnitte enthalten und diese dann auch mehrere Absätze. 
+
+%
+\subsubsection{} 
+Ein weitere Unterabschnitt, indem dann endlich mit dem Vortrag eines Themas beginnt. 
+Es sollte aber stets mit Hilfe des Befehls \verb|\cite{...}| auf die entsprechende Stelle des Textes verwiesen werden: Etwa \textsc{Oxtoby} \cite[Satz 7.8]{oxtoby}, dann findet man das Zitat leichter -- 
+%
+\begin{center}
+\verb|\textsc{Oxtoby} \cite[Satz 7.8]{oxtoby}|.
+\end{center}
+%
+\subsubsection{}
+%
+Und noch ein weiterer Unterabschnitt.
+%
+\subsection{Der Hauptsatz}
+\subsubsection{}
+Wir kommen nun zu unseren zentralen Satz der Mathematik.
+%
+\begin{theorem}\label{thm:hauptsatz}
+%	
+Ist $ f $ eine stetige reellwertige Funktion auf dem Intervall\/ $ \interval{0,1} $, so ist
+%
+\[
+  	F( t ) = \int_{ 0 }^{ t } f(s) \ds
+\]
+%
+differenzierbar auf diesem Intervall und $ F'(t) = f(t) $ für alle $ t \in  \interval{0,1} $.
+\end{theorem}
+%
+\begin{proof}
+Nun zum Beweis \ldots 
+\end{proof}
+%
+\subsubsection{}
+Für die Mathematik verwenden wir \textsc{Voss} \cite{voss-math} oder, da als PDF vorhanden \textsc{Grätzer} \cite{graetzer-ma}
+
+\subsubsection{}
+Für kleinere Ausarbeitungen ist die Verwendung der Möglichkeiten von \LaTeX{} für die Erstellung von Referenzen völlig ausreichend.
+Für größere Arbeiten empfiehlt es sich, das Paket \texttt{biblatex} zu nutzen -- siehe hierzu etwa meinen \LaTeX{}-Tipp Nr.5 und die dort angegeben Literatur.
+Dieses Paket vereinfacht die Eingabe von Literaturzitaten erheblich.
+ 
+\subsubsection{}
+Weiteres findet sich in dem Eingangs erwähnten PDF-Dokument.
+
+\subsection{Zusammenfassung und Ausblick}
+Die Überschrift sagt alles \ldots
+
+% -----------------------------------------------
+\begin{thebibliography}{99}
+%
+\bibitem{graetzer-ma} George Grätzer,  
+\emph{More Math into \LaTeX{}}, Springer (2007)
+%
+\bibitem{knuth:texbook} Donald E.Knuth,  
+\emph{The \TeX{} Book}, Addison-Weseley (1986)
+%
+\bibitem{lambort} Leslie Lambort,
+{\LaTeX}, \emph{Users Guide \& Reference Manual}, Addison-Weseley (1986) 
+%
+\bibitem{oxtoby} John C. Oxtoby,
+\emph{Maß und Kategorie}, Springer (1971)
+%
+\bibitem{schlosser} Joachim Schlosser, 
+\emph{Wissenschaftliche Arbeiten schreiben mit \LaTeX{} -- Leitfaden für Einsteiger} 6. Auflage, mitp (2016)
+%
+\bibitem{rrzn} Thomas Sturm, 
+\emph{\LaTeX{} -- Einführung in das Textsatzsystem}, RRZN Hannover (2014)
+%
+\bibitem{voss-wiss} Herbert Voß, 
+\emph{Die wissenschaftliche Arbeit mit \LaTeX{}} 2. Auflage, DANTE-Lehmanns media  (2021)
+%
+\bibitem{voss-math} Herbert Voß, 
+\emph{Mathematiksatz mit \LaTeX{}}, 3. Auflage, DANTE-Lehmanns media (2018)
+%%
+\bibitem{voss-ref} Herbert Voß, 
+\emph{\LaTeX{} Referenz}, 4. Auflage, DANTE-Lehmanns media  (2019)
+%%
+\end{thebibliography}
+%%

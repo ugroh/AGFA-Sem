@@ -1,0 +1,71 @@
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Beamer-defn.tex
+%% Makros für Beamer
+%% Stand: 2022/03/11
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% --
+\usepackage{selinput} 
+\SelectInputMappings{% s
+  adieresis={ä},
+  germandbls={ß},
+}
+\usepackage[T1]{fontenc}
+
+\usepackage[ngerman]{babel} 
+\usepackage[babel,german=guillemets]{csquotes}
+%% Mathematisches
+%% --
+
+%% -- Zahlen
+
+\newcommand{\N}{\mathbb{N}}		% Natürliche Zahlen
+\newcommand{\Z}{\mathbb{Z}}		% Ganze Zahlen
+\newcommand{\Q}{\mathbb{Q}}		% Rationale Zahlen
+\newcommand{\R}{\mathbb{R}}		% Reelle Zahlen
+\newcommand{\C}{\mathbb{C}}		% Komplexe Zahlen
+\newcommand{\K}{\mathbb{K}}		% Koerperzeichen
+
+%% -- Ableitungen
+ 
+\newcommand*{\ds}{\mathop{}\!\mathrm{d}{s}}       % \ds = ds, 
+\newcommand*{\dt}{\mathop{}\!\mathrm{d}{t}}       % \dt = dt, 
+\newcommand*{\dx}{\mathop{}\!\mathrm{d}{x}}       % \dx = dx,
+\newcommand*{\diff}[1]{\mathop{}\!\mathrm{d}{#1}}	% \diff{\mu} = d\mu, 
+
+
+
+%% -- Richtigen Abkürzungen; 
+
+\usepackage{xspace}
+\newcommand{\zB}{z.\,B.\xspace}
+\newcommand{\og}{o.\,g.\xspace}
+\renewcommand{\dh}{d.\,h.\xspace}
+\newcommand{\etc}{etc.\xspace}
+\newcommand{\bzw}{bzw.\xspace}
+
+%% --
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtools}
+
+%% -- Norm, Absolutbetrag, duales Paar siehe mathtools Abschnitt 3.6
+\DeclarePairedDelimiterX{\norm}[1]{\lVert}{\rVert}{\ifblank{#1}{\:\cdot\:}{#1}}
+\DeclarePairedDelimiterX{\abs}[1]{\lvert}{\rvert}{\ifblank{#1}{\:\cdot\:}{#1}}
+\DeclarePairedDelimiterX{\dualp}[2]{\langle}{\rangle}{\ifblank{#1#2}{\,\cdot\,,\cdot\,}{\,#1,#2\,}}
+
+%% -- Intervalle 
+\newcommand{\interval}[1]{\left[ #1 \right]}	
+\newcommand{\ointerval}[1]{\left] #1 \right[}	
+\newcommand{\rointerval}[1]{\left[ #1 \right[}
+\newcommand{\lointerval}[1]{\left] #1 \right]} 
+
+
+%% -- Einige mathematische Umgebungen
+%% -- bitte baechten: Einiges ist bereits definiert
+%% -- siehe hierzu https://ctan.org/pkg/beamer
+%% -- 
+
+\newtheorem{proposition}{Satz}
+\newtheorem{exercise}{Aufgabe}
+\newtheorem{remark}{Anmerkung}
+\newtheorem{remarks}{Anmerkungen}
+\newtheorem{thm}{Theorem}
