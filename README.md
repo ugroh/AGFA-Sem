@@ -22,7 +22,7 @@ Aufbau:
 </p>
 <p>
 Bitte unbedingt die Datei SEM-ReadMe.pdf lesen und beherzigen, was dort steht. 
-Diese findet sich im ./ReadMe Ordner.
+Diese findet sich im ./SEM-ReadMe Ordner (inkl. der Datei SEM-Master.pdf)
 </p>
 <p>
 Fragen. Wünsche etc bitte an 
