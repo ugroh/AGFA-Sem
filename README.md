@@ -9,6 +9,7 @@ Die Vorlage eignet sich auch bestens, um sich in das LaTeX-System einzuarbeiten.
 Diese sollte man in `My-defn.tex` eintragen.
 Alles ist in Detail in `SEM-ReadMe.pdf` beschrieben.
 * In `./content` findet sich die Dateien, in der man seinen Text eingeben sollte. Diese werden dann entsprechend in die Hauptdatei eingebunden.
+* Die Datei `SEM-Master.zip' enthält alles in dieser Ordnung und ist bestens geeignet für eine Installation auf Overleaf oder auf dem PC (einfach entpacken).
 
 Bitte unbedingt die Datei `SEM-ReadMe.pdf` lesen und beherzigen, was dort steht. 
 Diese findet sich im `./SEM-ReadMe` Ordner (inkl. der Datei `SEM-Master.pdf`)
