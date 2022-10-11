@@ -1,41 +1,40 @@
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% SEM-art.tex
-%% Layout, Font, erg. Pakete etc
-%% Stand 2022/03/11
+%% SEM-art.tex:
+%% Layout, Font, Pakete etc.
+%% Stand 2022/10/10
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{onlyamsmath}			% Fehler bei Eingabe Mathematik
 \usepackage[l2tabu,orthodox]{nag} 	% Fehler im LaTeX-Code
 
-%% -- Für alle, die kein UTF8 eingestellt haben
-%% --
-
+%% --------------------------
+%% Falls kein UTF-8 eingestellt ist
+%% Kann entfallen bei UTF8
+%% --------------------------
 \usepackage{selinput} 		% Automatische Wahl der "encoding"
-	\SelectInputMappings{	% für alle, die immer noch kein UTF8 nutzen	
-		,adieresis={ä}		% texdoc selinput
+	\SelectInputMappings{	% texdoc selinput	
+		,adieresis={ä}		% 
        	,germandbls={ß}		%
             }
-\usepackage[T1]{fontenc}   % 
+\usepackage[T1]{fontenc}   % texdoc fontenc
 
-%% --  Wir schreiben deutschen Text und nutzen die deutschen Trennungsregeln
-%% --
-
+%% --------------------------
+%% Wir schreiben deutschen Text und nutzen die deutschen Trennungsregeln
+%% --------------------------
 \usepackage[ngerman]{babel}
-\usepackage[babel,german=guillemets]{csquotes} % \enquote{Text}
+\usepackage[babel,german=guillemets]{csquotes} 		% \enquote{Text}
 \babelprovide[hyphenrules=ngerman-x-latest]{ngerman}
 
-%% -- Times New Roman
-%% -- 
-
+%% --------------------------
+%% Times New Roman
+%% --------------------------
 \usepackage{mathptmx}			
 	\usepackage[scaled=.90]{helvet}
 	\usepackage{courier}
-	
-%% -- Alternative lmodern
-%% --
 
-
-	
+%% --------------------------	
+%% -- Alternative lmodern 
+%% --------------------------	
 %\usepackage{lmodern}
 %\DeclareMathVersion{sans}
 %	\SetSymbolFont{letters}{sans}{OML}{cmbr}{m}{it} % Math letters from Latin Modern Sans
@@ -45,19 +44,18 @@
 %	\SetMathAlphabet{\mathsf}{sans}{OT1}{lmss}{m}{n}
 %	\SetMathAlphabet{\mathit}{sans}{OT1}{lmr}{m}{it}
 
-%% --
-
-%% -- Layout siehe KOMA-Script
-
+%% --------------------------
+%% Layout siehe KOMA-Script Buch für Details
+%% --------------------------
 \addtokomafont{title}{\let\huge\Large} 
 \addtokomafont{author}{\large} 
 \addtokomafont{date}{\normalsize}
-%
+% 
 \renewcommand*{\thesubsection}{\arabic{subsection}.\kern1pt}
 \RedeclareSectionCommand[font = \itshape]{subsection}
 \setcounter{secnumdepth}{\subsubsectionnumdepth} 
 %
-\renewcommand*{\thesubsubsection}{\arabic{subsubsection}.\kern2pt} 
+\renewcommand*{\thesubsubsection}{\arabic{subsubsection}.\kern1pt} 
 %
 \RedeclareSectionCommand[%
   	,beforeskip		= .5\baselineskip 	% Etwas Abstand
@@ -65,47 +63,34 @@
 	,font			= \normalfont	%	
 	]{subsubsection} 
 
+%% --------------------------
 %% -- Kopf/Fußzeile
-%% -- entfällt
+%% --------------------------
 
-%% -- Sinnvolle Pakete
-%% --
-%% -- Bessere Listen 
+%% --------------------------
+%% Sinnvolle Pakete
+%% --------------------------
 
+%% Bessere Aufzählungen 
 \usepackage[shortlabels,inline]{enumitem} 	% texdoc enumitem
 
-%% -- Weitere sinnvolle Pakete
-%% --
+%% Flattersatz
 \usepackage[%
 	,newcommands
 	,footnotes
 	,raggedrightboxes
 		]{ragged2e}	% Für Flattersatz
-		
-\usepackage{longtable}	% Für große Tabellen
-	
-%% --  Mathematikumgebungen
 
+%% --------------------------
+%% Mathematik
+%% --------------------------
 \usepackage{amsmath,amsthm,amssymb}
-\usepackage{mathtools}
 
-%% -- Norm, Absolutbetrag, duales Paar siehe mathtools Abschnitt 3.6
-\DeclarePairedDelimiterX{\norm}[1]{\lVert}{\rVert}{\ifblank{#1}{\:\cdot\:}{#1}}
-\DeclarePairedDelimiterX{\abs}[1]{\lvert}{\rvert}{\ifblank{#1}{\:\cdot\:}{#1}}
-\DeclarePairedDelimiterX{\dualp}[2]{\langle}{\rangle}{\ifblank{#1#2}{\,\cdot\,,\cdot\,}{\,#1,#2\,}}
-
-%% -- Intervalle 
-\newcommand{\interval}[1]{\left[ #1 \right]}	
-\newcommand{\ointerval}[1]{\left] #1 \right[}	
-\newcommand{\rointerval}[1]{\left[ #1 \right[}
-\newcommand{\lointerval}[1]{\left] #1 \right]} 
-
-%% -- Mathematische Umgebungen
-%% -- Siehe amsthm-manual
+%% -- Mathematische Umgebungen	texdoc amsthm
 \theoremstyle{plain}
 %
 \newtheorem{theorem}{Theorem}
-\newtheorem{thm}{Theorem}
+\newtheorem{thm}[theorem]{Theorem}
 \newtheorem{proposition}[theorem]{Satz}
 \newtheorem{prop}[theorem]{Satz}
 \newtheorem{satz}[theorem]{Satz}
@@ -120,7 +105,6 @@
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{defn}[theorem]{Definition}
 \newtheorem{example}[theorem]{Beispiel}
-\newtheorem{examp}[theorem]{Beispiel}
 \newtheorem{beispiel}[theorem]{Beispiel}
 %
 \theoremstyle{remark}
@@ -128,6 +112,10 @@
 \newtheorem*{note}{Anmerkung}
 \newtheorem*{rem}{Anmerkung}
 \newtheorem*{remark}{Anmerkung}
+
+% Hier unnötig, da bereits über amsthm definiert
+%\newtheorem{proof}{Beweis}
+%\theoremsymbol{\ensuremath{\square}}
 
 
 

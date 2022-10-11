@@ -1,0 +1,59 @@
+%% --------------------------
+%% SEM-beamer.tex
+%% Include File, muss noch zum sty-File gemacht werden
+%% --------------------------
+
+%% --------------------------
+%% Falls kein UTF-8 eingestellt ist
+%% Kann entfallen bei UTF8
+%% --------------------------
+\usepackage{selinput} 		% Automatische Wahl der "encoding"
+	\SelectInputMappings{	% texdoc selinput	
+		,adieresis={ä}		% 
+       	,germandbls={ß}		%
+            }
+\usepackage[T1]{fontenc}   % texdoc fontenc
+
+%% --------------------------
+%% Wir schreiben deutschen Text und nutzen die deutschen Trennungsregeln
+%% --------------------------
+\usepackage[ngerman]{babel}
+\usepackage[babel,german=guillemets]{csquotes} 		% \enquote{Text}
+\babelprovide[hyphenrules=ngerman-x-latest]{ngerman}
+
+%%
+%% Beamer Settings
+%%
+
+%%
+%% Thema, siehe etwa Voß, Präsentationen mit LaTeX, 
+%\usetheme{Pittsburgh}
+\usetheme{boxes}
+\usecolortheme{dove}
+%%
+\setbeamertemplate{navigation symbols}{}			% keine Navigationssymbole
+%\renewcommand{\insertcontinuationtext}{(Forts.)} 	% falls etwas anderes erwünscht ist ändern
+\setbeamertemplate{frametitle continuation}[from second]
+
+%%
+%%  Für Aufzählungen
+%%
+\defbeamertemplate{itemize item}{bullet}{\textbullet}
+\defbeamertemplate{itemize subitem}{circ}{$\circ$}
+\defbeamertemplate{itemize subsubitem}{dash}{--}%$ \circ$}
+%%
+\setbeamertemplate{itemize item}[bullet]
+\setbeamertemplate{itemize subitem}[circ]
+\setbeamertemplate{itemize subsubitem}[dash]
+
+%%
+%% Font
+%%
+\usepackage{libertine}
+%
+%%
+%% Abkürzungen und Definitionen
+%%
+\input{./preamble/SEM-defn}				
+
+%%

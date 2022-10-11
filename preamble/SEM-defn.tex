@@ -2,8 +2,19 @@
 %% Einige sinnvolle Definitionen
 %% und nützliche Pakete
 %% Eigene Ergäzungen in My-Def.tex
-%% Stand: 2022/03/11
+%% Stand: 2022/10/10
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% -- Mathematische Abkürzungen
+\usepackage{mathtools}
+%% -- Norm, Absolutbetrag, duales Paar siehe mathtools Abschnitt 3.6
+\DeclarePairedDelimiterX{\norm}[1]{\lVert}{\rVert}{\ifblank{#1}{\:\cdot\:}{#1}}
+\DeclarePairedDelimiterX{\abs}[1]{\lvert}{\rvert}{\ifblank{#1}{\:\cdot\:}{#1}}
+
+%% -- Intervalle 
+\newcommand{\interval}[1]{\left[ #1 \right]}	
+\newcommand{\ointerval}[1]{\left] #1 \right[}	
+\newcommand{\rointerval}[1]{\left[ #1 \right[}
+\newcommand{\lointerval}[1]{\left] #1 \right]} 
 
 %% -- Zahlen
 
@@ -15,7 +26,7 @@
 \newcommand{\K}{\mathbb{K}}		% Koerperzeichen
 
 %% -- Ableitungen
-%% -- auch als Beispieö für mathematische Ausdrücke
+%% -- auch als Beispiel für mathematische Ausdrücke
  
 \newcommand*{\ds}{\mathop{}\!\mathrm{d}{s}}       % \ds = ds, 
 \newcommand*{\dt}{\mathop{}\!\mathrm{d}{t}}       % \dt = dt, 
@@ -50,13 +61,15 @@
 \let\geq=\ORGvargeq
 
 %% -- Richtigen Abkürzungen; bitte auch in xspace-manual reinsehen
-%% -- Bei Verwendung von \usepackage{hyperref} danch diesem Paket laden
+%% -- Bei Verwendung von \usepackage{hyperref} nach diesem Paket laden
 %% --
 
 \usepackage{xspace}
 \newcommand{\zB}{z.\,B.\xspace}
 \newcommand{\og}{o.\,g.\xspace}
 \renewcommand{\dh}{d.\,h.\xspace}
+\newcommand{\ua}{\mbox{u.\,a.}\xspace}
 \newcommand{\etc}{etc.\xspace}
 \newcommand{\bzw}{bzw.\xspace}
+\newcommand{\vs}{vs.\xspace}
 

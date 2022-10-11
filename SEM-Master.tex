@@ -1,30 +1,28 @@
 % !TEX TS-program = pdflatexmk
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %% Vorlage für kleinere Arbeiten wie Proseminar, Hausarbeit etc.
-%%  Für Bachelor/Masterarbeiten ist es besser, die Templates
-%%  https://github.com/ugroh/AGFA-Master zu nutzen 
-%%  Stand: 2022/03/11
-%%  ulgr@fmath.uni-tuebingen.de
-%%  
-% Wir verwenden KOMA-Script als Basis
-% Marcus Kohm: KOMA-Script
+%% Für Bachelor/Masterarbeiten ist es besser, die Templates
+%% https://github.com/ugroh/AGFA-Master zu nutzen 
+%% Basis: KOMA-Script https://komascript.de/~mkohm/scrguide.pdf 
+%% Stand: 2022/10/10
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \documentclass[%				%  
 	,ngerman					%  
-	,fontsize	= 12pt		% aaskommentiert = 11pt		 	
+%	,fontsize	= 12pt		% auskommentiert = 11pt		 	
 	,parskip	= half-		% Absatz mit Leerzeile
-	,BCOR		= 10mm		% Bindekorrektur fuer Klemmmappe
+	,BCOR		= 10mm		% Bindekorrektur fuer Klemmmappe etc
 	,leqno					% Nummern der Formeln etc. Links
 	,abstract	= true		% Zusammenfassung
 	,headings	= small		% oder large oder normal
-	,DIV		= calc		% Aufteilung der Seite
-	]{scrartcl}   			% KOMA-Script als Basis; https://komascript.de/~mkohm/scrguide.pdf
+	,DIV		= calc		% Aufteilung der Seite überlassen wir der Anwendung
+	]{scrartcl}   			% KOMA-Script als Basis; 
 
 %% -- Die Vorlagen
 %% --
 \input{./preamble/SEM-art}	% Layout etc. bitte nicht ändern
 \input{./preamble/SEM-defn}	% Einige sinnvolle Definitioen
 							% Siehe SEM-ReadMe.pdf für Erläuterungen
+
 %% -- Eigene Definitionen
 %% --
 \input{./preamble/My-defn}	% Die eigenen Definitionen
@@ -33,17 +31,17 @@
 \begin{document}
 
 %% -- Die üblichen Angaben
-\pagestyle{headings}
+%\pagestyle{headings}
 \title{Titel der Ausarbeitung}
 \subtitle{Für welche Vorlesung/Seminar etc.}
-\author{Eigener Name}
-\date{Datum Vortrag/Abgabe} % Oder \today eingeben
+\author{Name}
+\date{Datum} % Oder \today eingeben
 %% --
 
 \thispagestyle{empty}
 \maketitle
 %% --
-\input{./content/Master}	%% meine Ausführungen; auskommentieren
+\input{./content/ug-Master}	%% meine Ausführungen; durch eigene ersetzen, etwa 
 %\input{./content/MeinText} %% 
 %% --
 \end{document}
