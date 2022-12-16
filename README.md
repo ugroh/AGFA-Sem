@@ -1,5 +1,5 @@
 
-### SEM-Master (Stand: 2022/10/10)
+### SEM-Master (Stand: 2022/12/16)
 
 Templates für kleinere Ausarbeitungen, etwa für Seminare in der AGFA oder eigene kleinere Artikel. Die Vorlage eignet sich auch bestens, um sich in das LaTeX-System einzuarbeiten.
 
@@ -19,6 +19,10 @@ Bitte unbedingt die Datei `SEM-ReadMe.pdf` lesen und beherzigen, was dort steht.
 Diese findet sich im `./SEM-ReadMe` Ordner (inkl. der Datei `SEM-Master.pdf` und `SEM-Beamer.pdf`).
 
 Fragen. Wünsche etc bitte an ulgr@math.uni-tuebingen.de
+
+### Ergänzungen:
+
+* 2022/12/16: Kleine Ergänzungen in `SEM-Beamer.tex`
 
 
 
