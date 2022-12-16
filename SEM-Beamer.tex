@@ -2,23 +2,35 @@
 %% Muster für Beamer
 %% SEM-Beamer.tex
 %% Definitionen etc. in ./preamble/Beamer-defn.tex
-%% Stand:  2022/10/10
+%% Stand:  2022/2/16
+%% Mustervorlage
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[ngerman]{beamer}
-% ------------------------------------------------
-\usetheme{boxes}
-\beamertemplatenavigationsymbolsempty  % keine Navigationssymbole
-% 
+\documentclass[%
+	,ngerman
+	,hyperref={%
+		,bookmarks
+		,colorlinks=true
+		,citecolor=blue
+		,linkcolor=blue
+		,urlcolor=blue
+			}
+	,smaller
+	]{beamer}
+
+%% -- Beamer Definitionen 
+%% --
 \include{./preamble/SEM-beamer} 	% nicht alle üblichen Makros kann man nutzen
+\renewcommand{\insertcontinuationtext}{(Forts.)} 
+
 %% --
 \begin{document}
 %
 \title{Titel Vortrag}
 \author{Name}
 \date{Datum Vortrag} 
-% ------------------------------------------------
+%% --
 \frame{\titlepage} % erzeugt Titelseite
-% ------------------------------------------------
+%% --
 \begin{frame} 		
 	\frametitle{Vorbemerkungen}
 	
@@ -27,7 +39,11 @@
 		Wir betrachten nur \ldots
 		
 		\item
-		\enquote{usw}.
+		\enquote{usw.}
+		
+		\item
+		\ldots
+		
 	\end{enumerate}
 \end{frame}
 % --
@@ -48,21 +64,35 @@ differenzierbar auf diesem Intervall und $ F'(t) = f(t) $ für alle $ t \in \int
 
 \end{frame}
 %% 
-\begin{frame}
+\begin{frame}[allowframebreaks]
 	\frametitle{Aufzählungen}
 %
-\begin{block}{Bullet}
-	\begin{enumerate}[$\circ$]
+\begin{block}{Itemize}
+	\begin{itemize}
 
 		\item 
-		Erstes $ \abs{a} $
+		Erstes item
 		
 		\item
-		Zweites
+		Unteraufzählung
 		
-	\end{enumerate}
+		\begin{itemize}
+		
+		\item
+		Unterpunkt
+		
+		\end{itemize}
+		
+		\item
+		Zweites item
+		
+	\end{itemize}
 %
 \end{block}	
+
+%%--
+\framebreak
+%%--
 
 \begin{block}{Äquivalenz}
 	\begin{enumerate}[(a)]
@@ -71,6 +101,16 @@ differenzierbar auf diesem Intervall und $ F'(t) = f(t) $ für alle $ t \in \int
 		
 		\item
 		B
+	\end{enumerate}
+\end{block}
+
+\begin{block}{Nummeriert}
+	\begin{enumerate}[(i)]
+		\item 
+		Erstes $ \abs{a} $
+		
+		\item
+		Zweites
 	\end{enumerate}
 \end{block}
 %
