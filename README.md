@@ -10,7 +10,7 @@ Templates für kleinere Ausarbeitungen, etwa für Seminare in der AGFA oder eige
 * Im Stammverzeichnis befinden sich die Datei `SEM-Master.tex` als allgemeine Vorlage und `SEM-Beamer.tex` als Vorlage für Präsentationen mit der Beamer-Klasse.
 * In `./preamble` findet sich die Datei `SEM-art.tex`, in der Layout usw. zu finden sind. 
 * In der Datei SEM-defn.tex habe ich einige Definitionen vorgenommen, die ich einmal für nützlich halte und die auch als Anhalt für eigene genommen werden können.
-* Eigene definitionen bitte separat in `My-defn.tex` eintragen und vor allem testen.
+* Eigene Definitionen bitte separat in `My-defn.tex` eintragen und vor allem testen.
 * In `./content` findet sich die Dateien, in der man seinen Text eingeben soll und die via `\input{fn}` in die Hauptdatei übernommen wird. Bitte hier das Muster `ug-Master.tex` ansehen.
 
 #### Sonstiges: 	 
