@@ -1,5 +1,5 @@
 
-### SEM-Master (Stand: 2022/12/16)
+### SEM-Master (Stand: 2023/01/16)
 
 Templates für kleinere Ausarbeitungen, etwa für Seminare in der AGFA oder eigene kleinere Artikel. Die Vorlage eignet sich auch bestens, um sich in das LaTeX-System einzuarbeiten.
 
@@ -8,9 +8,13 @@ Templates für kleinere Ausarbeitungen, etwa für Seminare in der AGFA oder eige
 #### Aufbau:
 
 * Im Stammverzeichnis befinden sich die Datei `SEM-Master.tex` als allgemeine Vorlage und `SEM-Beamer.tex` als Vorlage für Präsentationen mit der Beamer-Klasse.
-* In `./preamble` findet sich die Datei `SEM-art.tex`, in der Layout usw. zu finden sind. 
+
+* In `./preamble` findet sich die Datei `SEM-art.tex`, in der Layout usw. zu finden sind. Bitte diese Datei nicht ändern. Falls es spezielle Wünsche für Ergänzungen gibt, dann kann ich die gern einarbeiten.
+
 * In der Datei SEM-defn.tex habe ich einige Definitionen vorgenommen, die ich einmal für nützlich halte und die auch als Anhalt für eigene genommen werden können.
+
 * Eigene Definitionen bitte separat in `My-defn.tex` eintragen und vor allem testen.
+
 * In `./content` findet sich die Dateien, in der man seinen Text eingeben soll und die via `\input{fn}` in die Hauptdatei übernommen wird. Bitte hier das Muster `ug-Master.tex` ansehen.
 
 #### Sonstiges: 	 
@@ -22,7 +26,7 @@ Fragen. Wünsche etc bitte an ulgr@math.uni-tuebingen.de
 
 ### Ergänzungen:
 
-* 2022/12/16: Kleine Ergänzungen in `SEM-Beamer.tex`
+* 2023/01/16: Kleinere Ergänzungen
 
 
 
