@@ -26,9 +26,11 @@ Fragen. Wünsche etc bitte an ulgr@math.uni-tuebingen.de
 
 ### Ergänzungen:
 
-* 2023/01/16: Kleinere Ergänzungen
+* 2023/01/16
+	- Kleinere Ergänzungen
 
-* 2023/01/20: Bitte für die Eingabe von Mathematik die kurze, aber prägnante Übersicht [AMS: Short Math Guide](https://ctan.org/pkg/short-math-guide) nutzen. Aus meiner Sicht eine der besten Einführungen in den Formelsatz. 
+* 2023/01/20 
+	- Bitte für die Eingabe von Mathematik die kurze, aber prägnante Übersicht [AMS: Short Math Guide](https://ctan.org/pkg/short-math-guide) nutzen. Aus meiner Sicht eine der besten Kurzeinführungen in den Formelsatz. 
 
 
 
