@@ -1,5 +1,5 @@
 
-### SEM-Master (Stand: 2023/01/16)
+### SEM-Master (Stand: 2023/01/20)
 
 Templates für kleinere Ausarbeitungen, etwa für Seminare in der AGFA oder eigene kleinere Artikel. Die Vorlage eignet sich auch bestens, um sich in das LaTeX-System einzuarbeiten.
 
