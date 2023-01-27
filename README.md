@@ -1,7 +1,7 @@
 
-### SEM-Master (Stand: 2023/01/20)
+### SEM-Master (Stand: 2023/01/27)
 
-Templates für kleinere Ausarbeitungen, etwa für Seminare in der AGFA oder eigene kleinere Artikel. Die Vorlage eignet sich auch bestens, um sich in das LaTeX-System einzuarbeiten.
+Templates für kleinere Ausarbeitungen, etwa für Seminarvorträge (Handouts) oder Hausarbeiten oder kleinere Artikel. Die Vorlage eignet sich auch bestens, um sich in das LaTeX-System einzuarbeiten.
 
 Über `Code` kann man sich die dort vorhandene ZIP-Datei auf den PC herunterladen und entweder dort entpacken oder auf `Overleaf` hochladen.
 
