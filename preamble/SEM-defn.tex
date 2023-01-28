@@ -6,18 +6,23 @@
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% -- Mathematische Abkürzungen
 \usepackage{mathtools}
-%% -- Norm, Absolutbetrag, duales Paar siehe mathtools Abschnitt 3.6
+%% -- Norm, Absolutbetrag, siehe mathtools Abschnitt 3.6
+%% -- angepasst an größere Symbole via der Stern-Variante \norm*{}
+%% --
 \DeclarePairedDelimiterX{\norm}[1]{\lVert}{\rVert}{\ifblank{#1}{\:\cdot\:}{#1}}
 \DeclarePairedDelimiterX{\abs}[1]{\lvert}{\rvert}{\ifblank{#1}{\:\cdot\:}{#1}}
 
 %% -- Intervalle 
+%% -- da muss man sich keine Gedanken über die Reihenfolge der 
+%% -- Klammern machen; sonst halt \left]a,b\right] für ]a,b] erforderlich
+%% --
 \newcommand{\interval}[1]{\left[ #1 \right]}	
 \newcommand{\ointerval}[1]{\left] #1 \right[}	
 \newcommand{\rointerval}[1]{\left[ #1 \right[}
 \newcommand{\lointerval}[1]{\left] #1 \right]} 
 
 %% -- Zahlen
-
+%% --
 \newcommand{\N}{\mathbb{N}}		% Natürliche Zahlen
 \newcommand{\Z}{\mathbb{Z}}		% Ganze Zahlen
 \newcommand{\Q}{\mathbb{Q}}		% Rationale Zahlen
@@ -33,7 +38,9 @@
 \newcommand*{\dx}{\mathop{}\!\mathrm{d}{x}}       % \dx = dx,
 \newcommand*{\diff}[1]{\mathop{}\!\mathrm{d}{#1}}	% \diff{\mu} = d\mu, 
 \renewcommand*{\d}[1]{\mathop{}\!\mathrm{d}{#1}}	% \d{\mu} = d\mu, 
-%% var-Symbole anstelle der Originalen, besser zu unterscheiden
+
+%% -- var-Symbole anstelle der Originale, besser zu unterscheiden
+%% -- Bitte beachten: \varphi gibt nun etwas \phi
 %% --
 
 \let\ORGvarepsilon=\varepsilon
@@ -62,14 +69,27 @@
 
 %% -- Richtigen Abkürzungen; bitte auch in xspace-manual reinsehen
 %% -- Bei Verwendung von \usepackage{hyperref} nach diesem Paket laden
+%% -- \mbox{} damit nicht getrennt wird
 %% --
 
-\usepackage{xspace}
-\newcommand{\zB}{z.\,B.\xspace}
-\newcommand{\og}{o.\,g.\xspace}
-\renewcommand{\dh}{d.\,h.\xspace}
-\newcommand{\ua}{\mbox{u.\,a.}\xspace}
-\newcommand{\etc}{etc.\xspace}
+\newcommand{\zB}{\mbox{z.\,B.}\xspace}
+\newcommand{\iA}{\mbox{i.\,A.}\xspace}
+\newcommand{\iAllg}{\mbox{i.\,Allg.}\xspace}
+\renewcommand{\dh}{\mbox{d.\,h.}\xspace}
+\newcommand{\oAe}{\mbox{o.\,Ä.}\xspace}
+\newcommand{\uAe}{\mbox{u.\,Ä.}\xspace}
+\newcommand{\og}{\mbox{o.\,g.}\xspace}
+\newcommand{\ua}{\mbox{u.\,a.}\xspace} 
+%%
+\newcommand{\inkl}{inkl.\xspace} 
+\newcommand{\sog}{sog.\xspace} 
+\newcommand{\bzgl}{bzgl.\xspace} 
+\newcommand{\fue}{\mbox{f.\,ü.}\xspace}
+\newcommand{\vs}{vs.\xspace} 
+\newcommand{\ca}{ca.\xspace}
 \newcommand{\bzw}{bzw.\xspace}
-\newcommand{\vs}{vs.\xspace}
+\newcommand{\etc}{etc.\xspace}
+\newcommand{\usw}{usw.\xspace}
+\newcommand{\ggf}{ggf.\xspace}
+\newcommand{\evtl}{evtl.\xspace}
 

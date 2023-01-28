@@ -2,7 +2,7 @@
 %% SEM-beamer.tex
 %% Include File, muss noch zum sty-File gemacht werden
 %% --------------------------
-\usepackage[T1]{fontenc}   % texdoc fontenc
+\usepackage[T1]{fontenc}   % texdoc fontenc; eigentlich unnötig
 %% --------------------------
 %% Falls kein UTF-8 eingestellt ist
 %% Kann entfallen bei UTF8
@@ -25,12 +25,11 @@
 
 %%
 %% Thema, siehe etwa Voß, Präsentationen mit LaTeX, 
-%\usetheme{Pittsburgh}
-\usetheme{boxes}
-\usecolortheme{dove}
+%\usetheme{Pittsburgh} %% bunt
+%\usetheme{boxes}
+\usecolortheme{dove}   %% klar und einfach
 %%
 \setbeamertemplate{navigation symbols}{}			% keine Navigationssymbole
-%\renewcommand{\insertcontinuationtext}{(Forts.)} 	% falls etwas anderes erwünscht ist ändern
 \setbeamertemplate{frametitle continuation}[from second]
 
 %%
@@ -38,7 +37,7 @@
 %%
 \defbeamertemplate{itemize item}{bullet}{\textbullet}
 \defbeamertemplate{itemize subitem}{circ}{$\circ$}
-\defbeamertemplate{itemize subsubitem}{dash}{--}%$ \circ$}
+\defbeamertemplate{itemize subsubitem}{dash}{--}%$\circ$}
 %%
 \setbeamertemplate{itemize item}[bullet]
 \setbeamertemplate{itemize subitem}[circ]
