@@ -1,20 +1,21 @@
 % !TEX TS-program = pdflatexmk
+% !TEX useTabsWithFiles
+% !TEX tabbedFile{./content/ulgr-muster.tex}(Mein Beitrag)
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %% Vorlage für kleinere Arbeiten wie Proseminar, Hausarbeit etc.
 %% Für Bachelor/Masterarbeiten ist es besser, die Templates
-%% https://github.com/ugroh/AGFA-Master zu nutzen 
+%% https://github.com/ugroh/AGFA-Muster zu nutzen 
 %% Basis: KOMA-Script siehe https://komascript.de/~mkohm/scrguide.pdf 
-%% Stand: 2023/01/16
+%% Stand: 2023/02/04
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \documentclass[%				%  
 	,ngerman					%  
 %	,fontsize	= 12pt		% 		 	
-	,parskip	= half-			% Absatz mit Leerzeile
+	,parskip	= half-		% Absatz mittels einer Leerzeile erzeugen
 	,BCOR		= 10mm		% Bindekorrektur fuer Klemmmappe etc
 	,leqno					% Nummern der Formeln etc. Links
 	,abstract	= true		% Zusammenfassung
 	,headings	= small		% oder large oder normal
-	,DIV		= calc		% Aufteilung der Seite überlassen wir der Anwendung
 	]{scrartcl}   			% KOMA-Script als Basis; 
 
 %% -- Die Vorlagen
@@ -31,17 +32,21 @@
 \begin{document}
 
 %% -- Die üblichen Angaben
-%\pagestyle{headings}
+%% --
 \title{Titel der Ausarbeitung}
 \subtitle{Für welche Vorlesung/Seminar etc.}
 \author{Name}
 \date{Datum} % Oder \today eingeben
-%% --
 
+%% -- Titel wird angegeben
+%% --
 \thispagestyle{empty}
 \maketitle
+
+%% -- Die Input-Files
 %% --
-\input{./content/ug-Master}	%% meine Ausführungen
+\input{./content/ulgr-muster}	%% meine Ausführungen ersetzen oder umbenennen
 %\input{./content/Mein-Text} %% eigene Ausführungen
-%% --
+
+%% -- 
 \end{document}
