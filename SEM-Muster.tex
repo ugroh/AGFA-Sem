@@ -1,6 +1,10 @@
 % !TEX TS-program = pdflatexmk
 % !TEX useTabsWithFiles
 % !TEX tabbedFile{./content/ulgr-muster.tex}(Mein Beitrag)
+%% --
+%% obiges ist die sog. magic command line; man muss dann nur noch
+%% latex aufrufen; unterstützt von TeXShop (für Mac) und TeXworks
+%% https://tug.org/texworks/ (sollte man nehmen)
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %% Vorlage für kleinere Arbeiten wie Proseminar, Hausarbeit etc.
 %% Für Bachelor/Masterarbeiten ist es besser, die Templates
@@ -28,6 +32,11 @@
 %% --
 \input{./preamble/My-defn}	% Die eigenen Definitionen
 							% Bitte die Definitionen in SEM-defn.tex beachten
+							
+%% -- anstelle von lmodern - nicht ganz so "hart"
+%% --
+\usepackage{libertinus}
+
 %% --
 \begin{document}
 
