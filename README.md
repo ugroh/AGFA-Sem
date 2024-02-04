@@ -1,5 +1,5 @@
 
-# SEM-Master (Stand: 2023/02/13)
+# SEM-Master (Stand: 2024/02/04)
 
 Dies ist eine Vorlage für kleinere Ausarbeitungen, etwa für Seminarvorträge (Handouts), Hausarbeiten oder kleinere Artikel. Die Vorlage eignet sich auch bestens, um sich in das LaTeX-System einzuarbeiten. Wer es etwas anspruchsvoller haben will: Bitte die `AGFA-Light`-Vorlage in [**AGFA-Master**](https://github.com/ugroh/AGFA-Master) nutzen. 
 
